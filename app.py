@@ -81,7 +81,7 @@ my_button.pack(pady=10)
 my_text = Text(root, width=40, height=10, font=('Impact', 20, 'italic'))
 my_text.pack(pady=20)
 
-# Open file button
+# Open file button and
 open_button = Button(root, text='Open text file', command=open_file)
 open_button.pack(pady=5)
 
