@@ -1,13 +1,15 @@
-
+# import some packages
 from tkinter import *
 from tkinter import filedialog
 import pyttsx3
 
+# create tkinter Desktop app
 root = Tk()
 root.title('text_to_speech')
 root.geometry('1000x800')
 root.iconbitmap('D:\™chromes™/text.ico')
 
+# Function for speech in text
 def talk():
     engine = pyttsx3.init()
     engine.setProperty('rate', 130)
@@ -21,7 +23,7 @@ def talk():
 
     my_entry.delete(0,END)
 
-
+# Function for speech to any text file
 def talk_file():
     engine = pyttsx3.init()
     engine.setProperty('rate', 130)
@@ -33,7 +35,7 @@ def talk_file():
 
     engine.runAndWait()
 
-
+# Function for open file
 def open_file():
     text_file = filedialog.askopenfilename(
         initialdir='E:\Projects/text_tospeech_diplomwork/',
@@ -46,7 +48,7 @@ def open_file():
     my_text.insert(END, stuff)
     text_file.close()
 
-
+# Function for save file
 def save_file():
     text_file = filedialog.askopenfilename(
         initialdir='E:\Projects/text_tospeech_diplomwork/',
