@@ -1,0 +1,95 @@
+
+from tkinter import *
+from tkinter import filedialog
+import pyttsx3
+
+root = Tk()
+root.title('text_to_speech')
+root.geometry('1000x800')
+root.iconbitmap('D:\™chromes™/text.ico')
+
+def talk():
+    engine = pyttsx3.init()
+    engine.setProperty('rate', 130)
+
+    voices = engine.getProperty('voices')
+
+    engine.setProperty('voice', voices[2].id)
+    engine.say(my_entry.get())
+
+    engine.runAndWait()
+
+    my_entry.delete(0,END)
+
+
+def talk_file():
+    engine = pyttsx3.init()
+    engine.setProperty('rate', 130)
+
+    voices = engine.getProperty('voices')
+
+    engine.setProperty('voice', voices[2].id)
+    engine.say(my_text.get("1.0",'end-1c'))
+
+    engine.runAndWait()
+
+
+def open_file():
+    text_file = filedialog.askopenfilename(
+        initialdir='E:\Projects/text_tospeech_diplomwork/',
+        title='Open file',
+        filetypes=(('Text Files', '*.txt'),)
+    )
+    text_file = open(text_file, 'r')
+    stuff = text_file.read()
+
+    my_text.insert(END, stuff)
+    text_file.close()
+
+
+def save_file():
+    text_file = filedialog.askopenfilename(
+        initialdir='E:\Projects/text_tospeech_diplomwork/',
+        title='Open file',
+        filetypes=(('Text Files', '*.txt'),)
+    )
+    text_file = open(text_file, 'w')
+    text_file.write(my_text.get(1.0, END))
+
+my_entry = Entry(root, font=('Helvetica', 40))
+my_entry.pack(pady=30)
+
+# button_img = PhotoImage(width=1, height=1)
+my_button = Button(root,
+                   text='Speak',
+                   command=talk,
+                  # image = button_img,
+                   width=12,
+                   height=1,
+                   compound='c',
+                   bg='green',
+                   fg='white',
+                   activebackground='blue',
+                   activeforeground='yellow',
+                   font=('Impact', 20, 'bold'),
+                   )
+my_button.pack(pady=10)
+
+# Open file place
+my_text = Text(root, width=40, height=10, font=('Impact', 20, 'italic'))
+my_text.pack(pady=20)
+
+# Open file button
+open_button = Button(root, text='Open text file', command=open_file)
+open_button.pack(pady=5)
+
+# To talk file text to speech
+speech_file_button = Button(root, text='Speech text file', command=talk_file)
+speech_file_button.pack(pady=5)
+
+# File save if file changed
+save_button = Button(root, text='Save File', command=save_file)
+save_button.pack(pady=5)
+
+
+root.mainloop()
