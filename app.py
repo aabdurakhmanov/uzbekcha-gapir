@@ -73,14 +73,7 @@ my_entry.pack(pady=30)
 my_button = Button(root,
                    text='Speak',
                    command=talk,
-                  # image = button_img,
-                   width=12,
-                   height=1,
                    compound='c',
-                   bg='green',
-                   fg='white',
-                   activebackground='blue',
-                   activeforeground='yellow',
                    font=('Impact', 20, 'bold'),
                    )
 
