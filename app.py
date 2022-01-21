@@ -65,24 +65,24 @@ def save_file():
 
 
 my_entry = Entry(root,
-                 font=('Helvetica', 40)
+                 font=('Helvetica', 60)
                  )
 my_entry.pack(pady=30)
 
 # button_img = PhotoImage(width=1, height=1)
 my_button = Button(root,
-                   text='Speak',
+                   text='Listen',
                    command=talk,
                    compound='c',
-                   font=('Impact', 20, 'bold'),
+                   font=('Impact', 20),
                    )
 
 my_button.pack(pady=10)
 
 # Open file place
 my_text = Text(root,
-               width=40,
-               height=10,
+               width=100,
+               height=12,
                font=('Impact', 20, 'italic')
                )
 my_text.pack(pady=20)
