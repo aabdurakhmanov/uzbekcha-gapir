@@ -1,6 +1,5 @@
 """
     This is program for speach any text in uzbek
-    Bu dastur istalgan matnni uzbek tilida talafuz qilib beraoladi
 """
 
 import pyttsx3
