@@ -7,8 +7,11 @@
 
 
 import pyttsx3
+import os
+from datetime import datetime
 from tkinter import *
 from tkinter import filedialog
+
 
 # create tkinter Desktop app
 root = Tk()
@@ -103,7 +106,7 @@ my_button = Button(
 
 my_button.pack(pady=10)
 my_button.place(
-                anchor=NW,
+                anchor="nw",
                 x=650,
                 y=165,
 )
@@ -166,7 +169,6 @@ save_button.place(
                   x=740,
                   y=620
 )
-
 
 
 root.mainloop()
