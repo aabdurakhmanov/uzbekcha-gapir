@@ -1,8 +1,6 @@
 """
     This is program for speach any text in uzbek
 
-
-
 """
 
 
