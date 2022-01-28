@@ -5,8 +5,6 @@
 
 
 import pyttsx3
-import os
-from datetime import datetime
 from tkinter import *
 from tkinter import filedialog
 
