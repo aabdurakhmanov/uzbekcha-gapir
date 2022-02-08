@@ -14,8 +14,9 @@ root = Tk()
 root.title('text_to_speech')
 root.geometry('1366x710')
 root.iconbitmap('D:\™chromes™/text.ico')
+root.resizable(True, True)
 
-bg = PhotoImage(file="images/icon1.png")
+bg = PhotoImage(file="images/splash.png")
 my_label = Label(root, image=bg)
 my_label.place(x=0, y=0, relwidth=1, relheight=1)
 
@@ -111,14 +112,19 @@ my_button.place(
 
 # Open file place
 
+scrollbar = Scrollbar(root)
+scrollbar.pack(side=LEFT, fill=Y, expand=True)
 my_text = Text(
                root,
                width=95,
                height=12,
-               font=('Impact', 20, 'italic')
+               bg='silver',
+               font=('Impact', 20, 'italic'),
                )
 my_text.pack(pady=20)
 
+my_text.config(yscrollcommand=scrollbar.set)
+scrollbar.config(command=my_text.yview)
 
 
 """
@@ -147,7 +153,7 @@ speech_file_button = Button(
                             )
 speech_file_button.pack(pady=5)
 speech_file_button.place(
-                         x=640,
+                         x=650,
                          y=620
 )
 
@@ -162,7 +168,7 @@ save_button = Button(
                      )
 save_button.pack(pady=5)
 save_button.place(
-                  x=740,
+                  x=760,
                   y=620
 )
 
