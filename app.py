@@ -113,7 +113,7 @@ my_button.place(
 # Open file place
 
 scrollbar = Scrollbar(root)
-scrollbar.pack(side=LEFT, fill=Y, expand=True)
+scrollbar.pack(side=RIGHT, fill=Y, expand=True)
 my_text = Text(
                root,
                width=95,
