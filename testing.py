@@ -1,34 +1,49 @@
 from tkinter import *
 
-ws = Tk()
-ws.title('PythonGuides')
-ws.geometry('400x300')
-ws.config(bg='#F25252')
+root = Tk()
+scrollbar = Scrollbar(root)
+scrollbar.pack( side = RIGHT, fill = Y )
 
-frame = Frame(ws)
+mylist = Listbox(root, yscrollcommand = scrollbar.set )
+for line in range(100):
+   mylist.insert(END, "This is line number " + str(line))
 
-text_box = Text(
-    ws,
-    height=13,
-    width=32,
-    font=(12)
-)
+mylist.pack( side = RIGHT, fill = BOTH )
+scrollbar.config( command = mylist.yview )
 
-text_box.pack(side=LEFT,expand=True)
+mainloop()
 
-
-sb_ver = Scrollbar(
-    ws,
-    orient=VERTICAL
-    )
-
-sb_ver.pack(side=RIGHT, fill=Y)
-
-text_box.config(yscrollcommand=sb_ver.set)
-sb_ver.config(command=text_box.yview)
-
-
-ws.mainloop()
+# from tkinter import *
+#
+# ws = Tk()
+# ws.title('PythonGuides')
+# ws.geometry('400x300')
+# ws.config(bg='#F25252')
+#
+# frame = Frame(ws)
+#
+# text_box = Text(
+#     ws,
+#     height=13,
+#     width=32,
+#     font=(12)
+# )
+#
+# text_box.pack(side=LEFT,expand=True)
+#
+#
+# sb_ver = Scrollbar(
+#     ws,
+#     orient=VERTICAL
+#     )
+#
+# sb_ver.pack(side=RIGHT, fill=Y)
+#
+# text_box.config(yscrollcommand=sb_ver.set)
+# sb_ver.config(command=text_box.yview)
+#
+#
+# ws.mainloop()
 # import tkinter
 # import tkinter.ttk as ttk
 #
