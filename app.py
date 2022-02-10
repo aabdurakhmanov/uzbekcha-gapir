@@ -1,5 +1,13 @@
 """
-    This is program for speach any text in uzbek
+    Bu dastur Text to speech yani Matnni talaffuz qilish dasturi
+    dasturning imkoniyatlari:
+        - Istalgan matnni talaffuz qilish.
+        - txt, doc, docx, exel formatidagi faylarni o`qish.
+        - Matnlarni o`zgartirish kiritgan holda yoki o`zgarishsiz saqlash imkoniyati.
+        - Talaffuzni 3 uch xil nutqda tinglash mumkun.
+        - O`ziga hos dizaynga ega.
+        -
+
 
 """
 
@@ -57,12 +65,13 @@ def talk_file():
 # Function for open file
 
 def open_file():
-    text_file = filedialog.askopenfilename(
-        initialdir='E:\Projects/text_tospeech_diplomwork/',
+    text_filepath = filedialog.askopenfilename(
+        initialdir='E:\Projects/text_tospeech_diplomwork/file/',
         title='Open file',
-        filetypes=(('Text Files', '*.txt'))
+        filetypes=(("Text Files", "*.txt"),
+                   ("All files", "*.*"))
     )
-    text_file = open(text_file, 'r')
+    text_file = open(text_filepath, 'r', encoding='ascii', errors='ignore')
     stuff = text_file.read()
 
     my_text.insert(END, stuff)
@@ -75,9 +84,10 @@ def open_file():
 
 def save_file():
     text_file = filedialog.askopenfilename(
-        initialdir='E:/Projects/text_tospeech_diplomwork/',
+        initialdir='E:\Projects/text_tospeech_diplomwork/file/',
         title='Open file',
-        filetypes=(('Text Files', '*.txt'),)
+        filetypes=(('Text Files', '*.txt'),
+                   ('All files', '*.*'))
     )
     text_file = open(text_file, 'w')
     text_file.write(my_text.get(1.0, END))
@@ -127,19 +137,17 @@ my_text.config(yscrollcommand=scrollbar.set)
 scrollbar.config(command=my_text.yview)
 
 
-"""
- Button for open text file
-"""
+# Open text file like txt
 
 open_button = Button(
                      root,
                      text='Open text file',
-                     command=open_file
+                     command=open_file,
                      )
 open_button.pack(pady=5)
 open_button.place(
             x=550,
-            y=620
+            y=620,
 )
 
 
