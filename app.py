@@ -71,7 +71,10 @@ def open_file():
         filetypes=(("Text Files", "*.txt"),
                    ("All files", "*.*"))
     )
-    text_file = open(text_filepath, 'r', encoding='ascii', errors='ignore')
+    text_file = open(text_filepath,
+                     'r', encoding='ascii',
+                     errors='ignore',
+                     )
     stuff = text_file.read()
 
     my_text.insert(END, stuff)
