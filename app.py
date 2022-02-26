@@ -1,13 +1,12 @@
 """
     Bu dastur Text to speech yani Matnni talaffuz qilish dasturi
     dasturning imkoniyatlari:
+
         - Istalgan matnni talaffuz qilish.
         - txt, doc, docx, exel formatidagi faylarni o`qish.
         - Matnlarni o`zgartirish kiritgan holda yoki o`zgarishsiz saqlash imkoniyati.
         - Talaffuzni 3 uch xil nutqda tinglash mumkun.
         - O`ziga hos dizaynga ega.
-        -
-
 
 """
 
@@ -30,7 +29,7 @@ my_label.place(x=0, y=0, relwidth=1, relheight=1)
 
 
 
-# Function for speech in text
+# Matnni talafuz qiluvchi funksiya
 
 def talk():
     engine = pyttsx3.init()
@@ -47,11 +46,11 @@ def talk():
 
 
 
-# Function for speech to any text file
+# Tanlangan faylni talafuz qiluvchi funkisya
 
 def talk_file():
     engine = pyttsx3.init()
-    engine.setProperty('rate', 130)
+    engine.setProperty('rate', 120)
 
     voices = engine.getProperty('voices')
 
@@ -62,7 +61,7 @@ def talk_file():
 
 
 
-# Function for open file
+# Tanlangan faylni ochuvchi funksiya
 
 def open_file():
     text_filepath = filedialog.askopenfilename(
@@ -83,7 +82,7 @@ def open_file():
 
 
 
-# Function for save file
+# Faylni saqlovchi funksiya
 
 def save_file():
     text_file = filedialog.askopenfilename(
@@ -102,10 +101,6 @@ my_entry = Entry(
                  )
 my_entry.pack(pady=20)
 
-
-
-# button_img = PhotoImage(width=1, height=1)
-
 my_button = Button(
                    root,
                    text='Listen',
@@ -123,7 +118,7 @@ my_button.place(
 
 
 
-# Open file place
+# Matn hoshiyasidagi scrollbar
 
 scrollbar = Scrollbar(root)
 scrollbar.pack(side=RIGHT, fill=Y)
@@ -140,7 +135,7 @@ my_text.config(yscrollcommand=scrollbar.set)
 scrollbar.config(command=my_text.yview)
 
 
-# Open text file like txt
+# Faylni ochuvchi button
 
 open_button = Button(
                      root,
@@ -154,8 +149,7 @@ open_button.place(
 )
 
 
-
-# To talk file text to speech
+# Faylni talaffuz qiluvchi button
 
 speech_file_button = Button(
                             root,
@@ -170,7 +164,7 @@ speech_file_button.place(
 
 
 
-# File save if file changed
+# Faylni saqlovchi button
 
 save_button = Button(
                      root,
