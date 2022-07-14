@@ -1,19 +1,17 @@
 """
     Bu dastur Text to speech yani Matnni talaffuz qilish dasturi
     dasturning imkoniyatlari:
-
         - Istalgan matnni talaffuz qilish.
-        - txt, doc, docx, exel formatidagi faylarni o`qish.
+        - txt formatidagi faylarni o`qish.
         - Matnlarni o`zgartirish kiritgan holda yoki o`zgarishsiz saqlash imkoniyati.
         - Talaffuzni 3 uch xil nutqda tinglash mumkun.
         - O`ziga hos dizaynga ega.
-
 """
 
 
-import pyttsx3
-from tkinter import *
-from tkinter import filedialog
+import pyttsx3 # pyttsx3 - pythonda NLP boyicha kutubxonasi
+from tkinter import * # tkinter - pythonda GUI grafik user interface kutubxonasi
+from tkinter import filedialog # filedialog - tkinterda matnli faylni ochuvchi funksiya
 
 
 # create tkinter Desktop app
@@ -33,7 +31,7 @@ my_label.place(x=0, y=0, relwidth=1, relheight=1)
 
 def talk():
     engine = pyttsx3.init()
-    engine.setProperty('rate', 130)
+    engine.setProperty('rate', 108)
 
     voices = engine.getProperty('voices')
 
@@ -50,7 +48,7 @@ def talk():
 
 def talk_file():
     engine = pyttsx3.init()
-    engine.setProperty('rate', 120)
+    engine.setProperty('rate', 108)
 
     voices = engine.getProperty('voices')
 
@@ -127,7 +125,7 @@ my_text = Text(
                width=95,
                height=12,
                bg='silver',
-               font=('Impact', 20, 'italic'),
+               font=('Times New Roman', 20),
                )
 my_text.pack(pady=20)
 
