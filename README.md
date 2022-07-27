@@ -6,5 +6,5 @@
 (2)
 
 ![image](https://user-images.githubusercontent.com/76531073/178924042-b142ead2-85bb-4d4c-8c95-da8c5c20412e.png)
-(3)
+(3).
 
