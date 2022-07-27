@@ -1,4 +1,4 @@
-# TTS_NLP_python_graduate_work
+# Text to speech for (NLP) with python have uzbek voices
 ![image](https://user-images.githubusercontent.com/76531073/178923882-1548d681-efd4-4469-9979-5bc48fea69cd.png)
 (1)
 
