@@ -1,6 +1,4 @@
-# Uzbekcha gapir
-
-![Project Logo/Icon](link_to_project_logo.png)
+# Uzbekcha gaplashamiz
 
 ## Table of Contents
 
