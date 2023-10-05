@@ -45,10 +45,9 @@ Clone this repository to your local machine:
 
 ## Usage
   Run the TTS converter from the command line:
+  python app.py run:
 
-  ```python app.py run
-
-### Features
+## Features
   Features
   Uzbek Language Support: Accurately converts Uzbek text to speech, ensuring correct pronunciation and intonation.
   High-Quality Audio: Generates high-quality audio output for a natural and pleasant listening experience.
