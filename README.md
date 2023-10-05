@@ -14,9 +14,9 @@
 Overview
 This Python project is a simple yet powerful Text-to-Speech (TTS) converter designed specifically for the Uzbek language. It allows users to input text in the Uzbek language and obtain a natural-sounding audio output of the provided text. This tool can be a valuable resource for various applications, such as:
 
-- [Accessibility: Enhance the accessibility of digital content by providing audio versions for visually impaired users who understand Uzbek.]
-- [Language Learning: Aid language learners in improving their Uzbek pronunciation and comprehension.]
-- [Voice Assistants: Integrate Uzbek TTS into voice assistant applications or services.]
+- Accessibility: Enhance the accessibility of digital content by providing audio versions for visually impaired users who understand Uzbek.
+- Language Learning: Aid language learners in improving their Uzbek pronunciation and comprehension.
+- Voice Assistants: Integrate Uzbek TTS into voice assistant applications or services.
 
 # 
 ![image](https://user-images.githubusercontent.com/76531073/178923882-1548d681-efd4-4469-9979-5bc48fea69cd.png)
