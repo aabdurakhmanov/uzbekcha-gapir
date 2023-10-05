@@ -37,7 +37,7 @@ Clone this repository to your local machine:
 1. Start by cloning this repository:
 
    ```shell
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/aabdurakhmanov/uzbecha-gapir.git
    cd your-repository
 
 2. Install the required dependencies:
@@ -48,7 +48,7 @@ Clone this repository to your local machine:
 
   ```python app.py run
 
-## Features
+### Features
   Features
   Uzbek Language Support: Accurately converts Uzbek text to speech, ensuring correct pronunciation and intonation.
   High-Quality Audio: Generates high-quality audio output for a natural and pleasant listening experience.
