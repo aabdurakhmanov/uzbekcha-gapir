@@ -32,7 +32,7 @@ This Python project is a simple yet powerful Text-to-Speech (TTS) converter desi
 
 ## Getting Started
 
-- [Clone this repository to your local machine:]
+- Clone this repository to your local machine:
 
 ### Installation
 
@@ -51,18 +51,18 @@ This Python project is a simple yet powerful Text-to-Speech (TTS) converter desi
 
 ## Features
   Features 
-- [Uzbek Language Support: Accurately converts Uzbek text to speech, ensuring correct pronunciation and intonation.]
-- [High-Quality Audio: Generates high-quality audio output for a natural and pleasant listening experience.]
-- [Customization: Fine-tune the voice parameters, such as pitch, speed, and volume, to suit your preferences.]
-- [Ease of Use: A user-friendly command-line interface (CLI) makes it easy to convert text to speech.]
-- [Open Source: This project is open-source, allowing for contributions and modifications by the community.]
+- Uzbek Language Support: Accurately converts Uzbek text to speech, ensuring correct pronunciation and intonation.
+- High-Quality Audio: Generates high-quality audio output for a natural and pleasant listening experience.
+- Customization: Fine-tune the voice parameters, such as pitch, speed, and volume, to suit your preferences.
+- Ease of Use: A user-friendly command-line interface (CLI) makes it easy to convert text to speech.
+- Open Source: This project is open-source, allowing for contributions and modifications by the community.
 
 
 ## License
-  - [This project is licensed under the MIT License.]
+  - This project is licensed under the MIT License.
 
 ## Contact
-  - [If you have questions, suggestions, or need assistance, you can reach out to the project maintainer:]
+  - If you have questions, suggestions, or need assistance, you can reach out to the project maintainer:
   
   GitHub: @aabdurakhmanov
 
