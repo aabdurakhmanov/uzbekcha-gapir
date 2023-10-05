@@ -39,14 +39,12 @@ This Python project is a simple yet powerful Text-to-Speech (TTS) converter desi
    git clone https://github.com/aabdurakhmanov/uzbecha-gapir.git
    
 
-2. Install the required dependencies: 
+2. Install the required dependencies:
 
     ```shell
    pip install -r requirements.txt
+     
 
-3.Run the TTS converter from the command line:  ```shell
-  python app.py run
- 
 ## Features
 - Uzbek Language Support: Accurately converts Uzbek text to speech, ensuring correct pronunciation and intonation.
 - High-Quality Audio: Generates high-quality audio output for a natural and pleasant listening experience.
