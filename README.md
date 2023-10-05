@@ -50,7 +50,6 @@ This Python project is a simple yet powerful Text-to-Speech (TTS) converter desi
   python app.py run:
 
 ## Features
-  Features 
 - Uzbek Language Support: Accurately converts Uzbek text to speech, ensuring correct pronunciation and intonation.
 - High-Quality Audio: Generates high-quality audio output for a natural and pleasant listening experience.
 - Customization: Fine-tune the voice parameters, such as pitch, speed, and volume, to suit your preferences.
