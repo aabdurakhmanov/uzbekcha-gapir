@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 About
+## 📌 Loyiha haqida | About
 
 **Uzbekcha Gaplashamiz** — bu **O'zbek tilidagi matnni ovozga o‘giruvchi** (`Text-to-Speech`) qulay dasturdir. Ushbu Python asosidagi loyiha quyidagi sohalarda foydali bo‘lishi mumkin:
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 📷 Screenshots
+## 📷 Suratlar | Screenshots
 
 | Matn kiritish | Ovoz chiqishi | GUI interfeys |
 |---------------|---------------|----------------|
@@ -24,9 +24,9 @@
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Boshlash | Getting Started
 
-### 🔽 Clone the repository
+### 🔽 Repositoriyani yuklab olish | Clone the repository
 
 ```bash
 git clone https://github.com/aabdurakhmanov/uzbecha-gapir.git
